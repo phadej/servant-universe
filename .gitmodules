@@ -1,0 +1,27 @@
+[submodule "servant"]
+	path = servant
+	url = git@github.com:haskell-servant/servant.git
+[submodule "servant-js"]
+	path = servant-js
+	url = git@github.com:haskell-servant/servant-js.git
+[submodule "servant-cassava"]
+	path = servant-cassava
+	url = git@github.com:haskell-servant/servant-cassava.git
+[submodule "servant-blaze"]
+	path = servant-blaze
+	url = git@github.com:haskell-servant/servant-blaze.git
+[submodule "servant-lucid"]
+	path = servant-lucid
+	url = git@github.com:haskell-servant/servant-lucid.git
+[submodule "servant-swagger"]
+	path = servant-swagger
+	url = git@github.com:haskell-servant/servant-swagger.git
+[submodule "servant-mock"]
+	path = servant-mock
+	url = git@github.com:haskell-servant/servant-mock.git
+[submodule "servant-yaml"]
+	path = servant-yaml
+	url = git@github.com:phadej/servant-yaml.git
+[submodule "servant-swagger-ui"]
+	path = servant-swagger-ui
+	url = git@github.com:phadej/servant-swagger-ui.git
