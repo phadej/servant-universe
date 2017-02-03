@@ -25,3 +25,9 @@
 [submodule "servant-swagger-ui"]
 	path = servant-swagger-ui
 	url = git@github.com:phadej/servant-swagger-ui.git
+[submodule "servant-multipart"]
+	path = servant-multipart
+	url = git@github.com:haskell-servant/servant-multipart.git
+[submodule "servant-JuicyPixels"]
+	path = servant-JuicyPixels
+	url = git@github.com:tvh/servant-JuicyPixels.git

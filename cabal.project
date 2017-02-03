@@ -1,0 +1,17 @@
+packages:
+  servant/servant/
+  servant/servant-client/
+  servant/servant-docs/
+  servant/servant-foreign/
+  servant/servant-server/
+  servant/doc/tutorial/
+  servant-blaze/
+  servant-cassava/
+  servant-js/
+  servant-JuicyPixels/
+  servant-lucid/
+  servant-mock/
+  servant-multipart/
+  servant-swagger-ui/
+  servant-swagger/
+  servant-yaml/
