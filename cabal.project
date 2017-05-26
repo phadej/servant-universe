@@ -5,6 +5,10 @@ packages:
   servant/servant-foreign/
   servant/servant-server/
   servant/doc/tutorial/
+  servant-auth/servant-auth/
+  servant-auth/servant-auth-client/
+  servant-auth/servant-auth-server/
+  servant-auth/servant-auth-swagger/
   servant-blaze/
   servant-cassava/
   servant-js/

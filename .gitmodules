@@ -31,3 +31,6 @@
 [submodule "servant-JuicyPixels"]
 	path = servant-JuicyPixels
 	url = git@github.com:tvh/servant-JuicyPixels.git
+[submodule "servant-auth"]
+	path = servant-auth
+	url = git@github.com:plow-technologies/servant-auth.git
