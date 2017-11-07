@@ -6,10 +6,10 @@ packages:
   servant/servant-foreign/
   servant/servant-server/
   servant/doc/tutorial/
-  servant-auth/servant-auth/
-  servant-auth/servant-auth-client/
-  servant-auth/servant-auth-server/
-  servant-auth/servant-auth-swagger/
+-- servant-auth/servant-auth/
+-- servant-auth/servant-auth-client/
+-- servant-auth/servant-auth-server/
+-- servant-auth/servant-auth-swagger/
   servant-blaze/
   servant-cassava/
   servant-js/
@@ -17,10 +17,11 @@ packages:
   servant-lucid/
   servant-mock/
   servant-multipart/
-  servant-quickcheck/
+-- servant-quickcheck/
   servant-swagger-ui/
   servant-swagger/
   servant-yaml/
+optional-packages:
 
 -- Allow non-released servant
 --allow-newer:
