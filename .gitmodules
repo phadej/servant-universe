@@ -34,3 +34,6 @@
 [submodule "servant-auth"]
 	path = servant-auth
 	url = git@github.com:plow-technologies/servant-auth.git
+[submodule "servant-quickcheck"]
+	path = servant-quickcheck
+	url = https://github.com/haskell-servant/servant-quickcheck.git
