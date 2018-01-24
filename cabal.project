@@ -6,11 +6,11 @@ packages:
   servant/servant-foreign/
   servant/servant-server/
   servant/doc/tutorial/
-  servant-auth/servant-auth/
-  servant-auth/servant-auth-client/
-  servant-auth/servant-auth-server/
-  servant-auth/servant-auth-docs/
-  servant-auth/servant-auth-swagger/
+--  servant-auth/servant-auth/
+--  servant-auth/servant-auth-client/
+--  servant-auth/servant-auth-server/
+--  servant-auth/servant-auth-docs/
+--  servant-auth/servant-auth-swagger/
   servant-blaze/
   servant-cassava/
   servant-js/
@@ -24,12 +24,12 @@ packages:
   servant-yaml/
 
 -- Allow non-released servant
---allow-newer:
+allow-newer:
 --  *:servant,
 --  *:servant-client,
 --  *:servant-server,
 --  *:servant-docs,
---  *:servant-foreign
+  *:servant-foreign
 
 -- testing-feat isn't officially GHC-8.2 ready :/ (needed for servant-js)
 allow-newer: testing-feat:base, testing-feat:template-haskell
