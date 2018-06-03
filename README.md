@@ -13,20 +13,20 @@ cabal new-build --enable-tests all
 
 ### GHC-8.4.3
 
-![deps-8.4](https://raw.githubusercontent.com/phadej/servant-universe/master/deps-8.4.3.png)
+![deps-8.4](https://raw.githubusercontent.com/phadej/servant-universe/master/deps.8.4.3.png)
 
 ### GHC-8.2.2
 
-![deps-8.2](https://raw.githubusercontent.com/phadej/servant-universe/master/deps-8.2.2.png)
+![deps-8.2](https://raw.githubusercontent.com/phadej/servant-universe/master/deps.8.2.2.png)
 
 ### GHC-7.10.3
 
-![deps-8.0](https://raw.githubusercontent.com/phadej/servant-universe/master/deps-8.0.2.png)
+![deps-8.0](https://raw.githubusercontent.com/phadej/servant-universe/master/deps.8.0.2.png)
 
 ### GHC-7.10.3
 
-![deps-7.10](https://raw.githubusercontent.com/phadej/servant-universe/master/deps-7.10.3.png)
+![deps-7.10](https://raw.githubusercontent.com/phadej/servant-universe/master/deps.7.10.3.png)
 
 ### GHC-7.8.4
 
-![deps-7.8](https://raw.githubusercontent.com/phadej/servant-universe/master/deps-7.8.4.png)
+![deps-7.8](https://raw.githubusercontent.com/phadej/servant-universe/master/deps.7.8.4.png)
