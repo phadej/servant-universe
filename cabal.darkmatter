@@ -1,0 +1,32 @@
+if impl(ghc >= 7.8)
+  packages:
+    servant/servant/
+    servant/servant-client/
+    servant/servant-client-core/
+    servant/servant-docs/
+    servant/servant-foreign/
+    servant/servant-server/
+    servant/doc/tutorial/
+    servant-blaze/
+    servant-cassava/
+    servant-js/
+    servant-JuicyPixels/
+    servant-lucid/
+    servant-mock/
+    servant-multipart/
+    servant-swagger-ui/servant-swagger-ui/
+    servant-swagger-ui/servant-swagger-ui-core/
+    servant-swagger-ui/servant-swagger-ui-redoc/
+    servant-swagger-ui/servant-swagger-ui-jensoleg/
+    servant-swagger/
+    servant-yaml/
+
+if impl(ghc >= 7.10)
+  packages:
+    servant-auth/servant-auth/
+    servant-auth/servant-auth-client/
+    servant-auth/servant-auth-server/
+    servant-auth/servant-auth-docs/
+    servant-auth/servant-auth-swagger/
+
+    servant-quickcheck/
