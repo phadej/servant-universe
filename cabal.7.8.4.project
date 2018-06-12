@@ -18,3 +18,4 @@ packages: servant/servant/
           servant-swagger-ui/servant-swagger-ui-jensoleg/
           servant-swagger/
           servant-yaml/
+with-compiler: ghc-7.8.4

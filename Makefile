@@ -1,6 +1,7 @@
 project-files: cabal.7.8.4.project cabal.7.10.3.project cabal.8.0.2.project cabal.8.2.2.project cabal.8.4.3.project
 build: build-7.8.4 build-7.10.3 build-8.0.2 build-8.2.2 build-8.4.3
 test: test-7.8.4 test-7.10.3 test-8.0.2 test-8.2.2 test-8.4.3
+deps: deps.7.8.4.png deps.7.10.3.png deps.8.0.2.png deps.8.2.2.png deps.8.4.3.png
 build-7.10.3: cabal.7.10.3.project
 	cabal new-build --builddir=dist-newstyle-7.10.3 --project-file cabal.7.10.3.project -w ghc-7.10.3 --disable-tests --disable-benchmarks all
 build-7.8.4: cabal.7.8.4.project
