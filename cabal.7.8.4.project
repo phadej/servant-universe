@@ -5,10 +5,10 @@ packages: servant/servant/
           servant/servant-foreign/
           servant/servant-server/
           servant/doc/tutorial/
+          servant/doc/cookbook/*/*.cabal
           servant-blaze/
           servant-cassava/
           servant-js/
-          servant-JuicyPixels/
           servant-lucid/
           servant-mock/
           servant-multipart/
@@ -18,4 +18,6 @@ packages: servant/servant/
           servant-swagger-ui/servant-swagger-ui-jensoleg/
           servant-swagger/
           servant-yaml/
+          servant-JuicyPixels/
+          servant-generate/
 with-compiler: ghc-7.8.4

@@ -37,3 +37,18 @@
 [submodule "servant-quickcheck"]
 	path = servant-quickcheck
 	url = https://github.com/haskell-servant/servant-quickcheck.git
+[submodule "servant-dhall"]
+	path = servant-dhall
+	url = https://github.com/haskell-servant/servant-dhall
+[submodule "servant-flatten"]
+	path = servant-flatten
+	url = git@github.com:alpmestan/servant-flatten.git
+[submodule "servant-generate"]
+	path = servant-generate
+	url = git@github.com:alpmestan/servant-generate.git
+[submodule "servant-nix"]
+	path = servant-nix
+	url = git@github.com:haskell-servant/servant-nix.git
+[submodule "servant-pagination"]
+	path = servant-pagination
+	url = git@github.com:chordify/haskell-servant-pagination.git
