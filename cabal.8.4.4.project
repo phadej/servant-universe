@@ -27,4 +27,7 @@ packages: servant-auth/servant-auth/
           servant-auth/servant-auth-swagger/
           servant-quickcheck/
           servant-flatten/
-with-compiler: ghc-7.10.3
+packages: servant-dhall/
+          servant-nix/
+          servant-pagination/
+with-compiler: ghc-8.4.4
