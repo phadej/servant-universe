@@ -1,4 +1,7 @@
 if impl(ghc >= 8.0)
+  constraints: hspec ^>=2.7
+  constraints: megaparsec ^>=7.0
+
   packages:
     servant/servant/
     servant/servant-client/
@@ -28,6 +31,8 @@ if impl(ghc >= 8.0)
     servant-swagger-ui/servant-swagger-ui-jensoleg/
     servant-swagger/
 
+    servant-dhall/
+
     -- tvh
     servant-JuicyPixels/
 
@@ -54,8 +59,9 @@ if impl(ghc >= 8.0 && <8.6)
 
 if impl(ghc >= 8.0 && <8.6)
   packages:
-    servant-dhall/
-    servant-nix/
+    -- needs megaparsec >= 7 update
+    -- https://github.com/haskell-nix/hnix/issues/431
+    -- servant-nix/
 
     -- chordify
     servant-pagination/

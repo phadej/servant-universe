@@ -1,3 +1,5 @@
+constraints: hspec ^>=2.7
+constraints: megaparsec ^>=7.0
 packages: servant/servant/
           servant/servant-client/
           servant/servant-client-core/
@@ -20,6 +22,7 @@ packages: servant/servant/
           servant-swagger-ui/servant-swagger-ui-redoc/
           servant-swagger-ui/servant-swagger-ui-jensoleg/
           servant-swagger/
+          servant-dhall/
           servant-JuicyPixels/
           servant-generate/
 constraints: network ^>= 2.8
@@ -28,8 +31,6 @@ packages: servant-auth/servant-auth/
           servant-auth/servant-auth-docs/
           servant-auth/servant-auth-swagger/
           servant-flatten/
-packages: servant-dhall/
-          servant-nix/
-          servant-pagination/
+packages: servant-pagination/
 allow-newer: servant-quickcheck:hspec-core, servant-quickcheck:hspec
 with-compiler: ghc-8.0.2

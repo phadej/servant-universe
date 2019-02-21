@@ -1,3 +1,5 @@
+constraints: hspec ^>=2.7
+constraints: megaparsec ^>=7.0
 packages: servant/servant/
           servant/servant-client/
           servant/servant-client-core/
@@ -5,10 +7,14 @@ packages: servant/servant/
           servant/servant-foreign/
           servant/servant-server/
           servant/doc/tutorial/
+          servant/servant-conduit/
+          servant/servant-pipes/
+          servant/servant-machines/
           servant-blaze/
           servant-cassava/
           servant-js/
           servant-lucid/
+          servant-yaml/
           servant-mock/
           servant-multipart/
           servant-swagger-ui/servant-swagger-ui/
@@ -16,15 +22,14 @@ packages: servant/servant/
           servant-swagger-ui/servant-swagger-ui-redoc/
           servant-swagger-ui/servant-swagger-ui-jensoleg/
           servant-swagger/
-          servant-yaml/
+          servant-dhall/
           servant-JuicyPixels/
           servant-generate/
 constraints: network ^>= 2.8
 packages: servant-auth/servant-auth/
-          servant-auth/servant-auth-client/
           servant-auth/servant-auth-server/
           servant-auth/servant-auth-docs/
           servant-auth/servant-auth-swagger/
-          servant-quickcheck/
           servant-flatten/
-with-compiler: ghc-7.10.3
+allow-newer: servant-quickcheck:hspec-core, servant-quickcheck:hspec
+with-compiler: ghc-8.6.3
