@@ -52,3 +52,6 @@
 [submodule "servant-pagination"]
 	path = servant-pagination
 	url = git@github.com:chordify/haskell-servant-pagination.git
+[submodule "servant-ekg"]
+	path = servant-ekg
+	url = git@github.com:haskell-servant/servant-ekg.git

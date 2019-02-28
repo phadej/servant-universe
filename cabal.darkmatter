@@ -31,6 +31,8 @@ if impl(ghc >= 8.0)
     servant-swagger-ui/servant-swagger-ui-jensoleg/
     servant-swagger/
 
+    servant-ekg/
+
     servant-dhall/
 
     -- tvh

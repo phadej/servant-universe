@@ -22,6 +22,7 @@ packages: servant/servant/
           servant-swagger-ui/servant-swagger-ui-redoc/
           servant-swagger-ui/servant-swagger-ui-jensoleg/
           servant-swagger/
+          servant-ekg/
           servant-dhall/
           servant-JuicyPixels/
           servant-generate/
