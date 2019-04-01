@@ -28,6 +28,7 @@ packages: servant/servant/
           servant-generate/
 constraints: network ^>= 2.8
 packages: servant-auth/servant-auth/
+          servant-auth/servant-auth-client/
           servant-auth/servant-auth-server/
           servant-auth/servant-auth-docs/
           servant-auth/servant-auth-swagger/

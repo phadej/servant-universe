@@ -28,9 +28,10 @@ packages: servant/servant/
           servant-generate/
 constraints: network ^>= 2.8
 packages: servant-auth/servant-auth/
+          servant-auth/servant-auth-client/
           servant-auth/servant-auth-server/
           servant-auth/servant-auth-docs/
           servant-auth/servant-auth-swagger/
           servant-flatten/
 allow-newer: servant-quickcheck:hspec-core, servant-quickcheck:hspec
-with-compiler: ghc-8.6.3
+with-compiler: ghc-8.6.4
