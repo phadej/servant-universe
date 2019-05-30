@@ -5,6 +5,14 @@ if impl(ghc >= 8.0)
   constraints: megaparsec   ^>=7.0
   constraints: generics-sop ^>=0.5
   constraints: swagger2     ^>=2.4
+  constraints: hashable     ^>=1.3
+
+  allow-newer: vault:hashable
+  allow-newer: psqueues:hashable
+  allow-newer: aeson:hashable
+  allow-newer: cassava:hashable
+
+  constraints: binary installed
 
   packages:
     servant/servant/
@@ -18,11 +26,11 @@ if impl(ghc >= 8.0)
     servant/doc/tutorial/
 
     servant/servant-conduit/
+    servant/servant-machines/
 
   if impl(ghc <8.8)
     packages:
       servant/servant-pipes/
-      servant/servant-machines/
 
   packages:
     servant-blaze/
