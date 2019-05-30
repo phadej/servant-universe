@@ -1,38 +1,55 @@
-constraints: hspec ^>=2.7
-constraints: megaparsec ^>=7.0
-packages: servant/servant/
-          servant/servant-client/
-          servant/servant-client-core/
-          servant/servant-docs/
-          servant/servant-foreign/
-          servant/servant-server/
-          servant/doc/tutorial/
-          servant/servant-conduit/
-          servant/servant-pipes/
-          servant/servant-machines/
-          servant-blaze/
-          servant-cassava/
-          servant-js/
-          servant-lucid/
-          servant-yaml/
-          servant-mock/
-          servant-multipart/
-          servant-swagger-ui/servant-swagger-ui/
-          servant-swagger-ui/servant-swagger-ui-core/
-          servant-swagger-ui/servant-swagger-ui-redoc/
-          servant-swagger-ui/servant-swagger-ui-jensoleg/
-          servant-swagger/
-          servant-ekg/
-          servant-dhall/
-          servant-JuicyPixels/
-          servant-generate/
-constraints: network ^>= 2.8
-packages: servant-auth/servant-auth/
-          servant-auth/servant-auth-client/
-          servant-auth/servant-auth-server/
-          servant-auth/servant-auth-docs/
-          servant-auth/servant-auth-swagger/
-          servant-flatten/
-packages: servant-pagination/
-allow-newer: servant-quickcheck:hspec-core, servant-quickcheck:hspec
+constraints:   QuickCheck   ^>=2.13
+constraints:   http-media   ^>=0.8
+constraints:   hspec        ^>=2.7
+constraints:   megaparsec   ^>=7.0
+constraints:   generics-sop ^>=0.5
+constraints:   swagger2     ^>=2.4
+packages:
+    servant/servant/
+    servant/servant-client/
+    servant/servant-client-core/
+    servant/servant-http-streams/
+    servant/servant-docs/
+    servant/servant-foreign/
+    servant/servant-server/
+    servant/doc/tutorial/
+    servant/servant-conduit/
+
+packages:
+    servant/servant-pipes/
+    servant/servant-machines/
+
+packages:
+    servant-blaze/
+    servant-cassava/
+    servant-js/
+    servant-lucid/
+    servant-yaml/
+    servant-mock/
+    servant-multipart/
+    servant-swagger-ui/servant-swagger-ui/
+    servant-swagger-ui/servant-swagger-ui-core/
+    servant-swagger-ui/servant-swagger-ui-redoc/
+    servant-swagger-ui/servant-swagger-ui-jensoleg/
+    servant-swagger/
+    servant-ekg/
+    servant-JuicyPixels/
+    servant-generate/
+
+constraints:   network ^>= 2.8
+packages:
+    servant-dhall/
+    servant-auth/servant-auth/
+    servant-auth/servant-auth-client/
+    servant-auth/servant-auth-server/
+    servant-auth/servant-auth-docs/
+    servant-auth/servant-auth-swagger/
+
+packages:
+    servant-quickcheck/
+    servant-flatten/
+    servant-pagination/
+
+packages:
+packages:      servant/doc/cookbook/*/*.cabal
 with-compiler: ghc-8.4.4

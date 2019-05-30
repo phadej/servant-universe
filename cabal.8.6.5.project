@@ -51,5 +51,4 @@ packages:
     servant-pagination/
 
 packages:
-packages:      servant/doc/cookbook/*/*.cabal
-with-compiler: ghc-8.2.2
+with-compiler: ghc-8.6.5

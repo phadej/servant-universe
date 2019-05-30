@@ -1,11 +1,16 @@
 if impl(ghc >= 8.0)
-  constraints: hspec ^>=2.7
-  constraints: megaparsec ^>=7.0
+  constraints: QuickCheck   ^>=2.13
+  constraints: http-media   ^>=0.8
+  constraints: hspec        ^>=2.7
+  constraints: megaparsec   ^>=7.0
+  constraints: generics-sop ^>=0.5
+  constraints: swagger2     ^>=2.4
 
   packages:
     servant/servant/
     servant/servant-client/
     servant/servant-client-core/
+    servant/servant-http-streams/
     servant/servant-docs/
     servant/servant-foreign/
     servant/servant-server/
@@ -13,9 +18,13 @@ if impl(ghc >= 8.0)
     servant/doc/tutorial/
 
     servant/servant-conduit/
-    servant/servant-pipes/
-    servant/servant-machines/
 
+  if impl(ghc <8.8)
+    packages:
+      servant/servant-pipes/
+      servant/servant-machines/
+
+  packages:
     servant-blaze/
     servant-cassava/
     servant-js/
@@ -33,8 +42,6 @@ if impl(ghc >= 8.0)
 
     servant-ekg/
 
-    servant-dhall/
-
     -- tvh
     servant-JuicyPixels/
 
@@ -43,31 +50,53 @@ if impl(ghc >= 8.0)
 
   constraints: network ^>= 2.8
 
-  packages:
-    servant-auth/servant-auth/
-    servant-auth/servant-auth-client/
-    servant-auth/servant-auth-server/
-    servant-auth/servant-auth-docs/
-    servant-auth/servant-auth-swagger/
+  if impl(ghc <8.8)
+    packages:
+      servant-dhall/
 
-    -- TODO: needs instances
-    -- servant-quickcheck/
+      servant-auth/servant-auth/
+      servant-auth/servant-auth-client/
+      servant-auth/servant-auth-server/
+      servant-auth/servant-auth-docs/
+      servant-auth/servant-auth-swagger/
+
+  packages:
+    servant-quickcheck/
 
     -- alpmestan
     servant-flatten/
 
-if impl(ghc >= 8.0 && <8.6)
-    servant/doc/cookbook/*/*.cabal
-
-if impl(ghc >= 8.0 && <8.6)
-  packages:
-    -- needs megaparsec >= 7 update
-    -- https://github.com/haskell-nix/hnix/issues/431
-    -- servant-nix/
-
     -- chordify
     servant-pagination/
 
-if impl(ghc >= 8.0)
-  allow-newer:
-    servant-quickcheck:hspec-core, servant-quickcheck:hspec
+if impl(ghc >= 8.2)
+  packages:
+    -- alpmestan
+    -- servant-nix/
+
+if impl(ghc >= 8.0 && <8.6)
+  packages:
+    servant/doc/cookbook/*/*.cabal
+
+if impl(ghc >= 8.8)
+  repository head.hackage
+    url: http://head.hackage.haskell.org/
+    secure: True
+    root-keys: 07c59cb65787dedfaef5bd5f987ceb5f7e5ebf88b904bbd4c5cbdeb2ff71b740
+               2e8555dde16ebd8df076f1a8ef13b8f14c66bad8eafefd7d9e37d0ed711821fb
+               8f79fd2389ab2967354407ec852cbe73f2e8635793ac446d09461ffb99527f6e
+    key-threshold: 3
+
+  allow-newer: *:base
+  allow-newer: *:template-haskell
+  allow-newer: *:time
+  allow-newer: *:Cabal
+  allow-newer: *:ghc
+
+  constraints: primitive <0.7
+
+  -- https://github.com/luqui/control-monad-omega/pull/2
+  -- source-repository-package
+  --   type:     git
+  --   location: git@github.com:phadej/control-monad-omega.git
+  --   tag:      38be2e392cf6bb49963ef732d29c78c5669bbc99
