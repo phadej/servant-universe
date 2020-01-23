@@ -7,9 +7,21 @@ if impl(ghc >= 8.0)
   constraints: megaparsec   ^>=7.0
   constraints: network      ^>=3.1
   constraints: QuickCheck   ^>=2.13
-  constraints: swagger2     ^>=2.4
+  constraints: swagger2     ^>=2.5
+
+  allow-newer: servant-swagger:swagger2
+  allow-newer: servant-swagger-ui:swagger2
+  allow-newer: servant-swagger-ui-core:swagger2
+  allow-newer: servant-swagger-ui-redoc:swagger2
+  allow-newer: servant-swagger-ui-jensoleg:swagger2
+
+  allow-newer: servant-auth-swagger:swagger2
+
+  -- todo: tutorial
+  -- constraints: js-jquery    ^>=3.3.1
 
   constraints: binary installed
+
 
   packages:
     servant/servant/
@@ -36,9 +48,10 @@ if impl(ghc >= 8.0)
     servant-lucid/
     servant-yaml/
 
-
+    servant-dhall/
     servant-mock/
     servant-multipart/
+    servant-quickcheck/
 
     servant-swagger-ui/servant-swagger-ui/
     servant-swagger-ui/servant-swagger-ui-core/
@@ -51,11 +64,13 @@ if impl(ghc >= 8.0)
 
     -- alpmestan
     servant-generate/
+    servant-flatten/
 
+    -- chordify
+    servant-pagination/
 
   if impl(ghc <8.8)
     packages:
-      servant-dhall/
 
       -- regex-base in tests
       servant-ekg/
@@ -65,15 +80,6 @@ if impl(ghc >= 8.0)
       servant-auth/servant-auth-server/
       servant-auth/servant-auth-docs/
       servant-auth/servant-auth-swagger/
-
-  packages:
-    servant-quickcheck/
-
-    -- alpmestan
-    servant-flatten/
-
-    -- chordify
-    servant-pagination/
 
 if impl(ghc >= 8.2)
   packages:
